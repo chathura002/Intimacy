@@ -1,0 +1,196 @@
+/* 
+    Created on : Mar 3, 2018, 11:34:58 PM
+    Author     : Chris bandara
+*/
+html.fullscreen-bg,
+html.fullscreen-bg body,
+html.fullscreen-bg #wrapper {
+    height: 100%; 
+}
+
+.vertical-align-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: table; 
+}
+
+.vertical-align-middle {
+    display: table-cell;
+    vertical-align: middle; 
+}
+
+/********************************
+ * AUTHENTICATION FORMS, PAGE
+ ********************************/
+.inner-box {
+    -moz-box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 70%;
+    height: 450px;
+    margin: 0 auto;
+    background-color: #DDDDDD; }
+
+.inner-box:before {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    content: ' ';
+    vertical-align: middle;
+    height: 100%; }
+
+.inner-box .content {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    width: 99%;
+    vertical-align: middle; 
+    padding: 100px;
+}
+
+.inner-box .left {
+    float: left;
+    width: 42%;
+    height: 100%;
+    padding: 0 30px;
+    text-align: center; }
+
+.inner-box .left:before {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    content: ' ';
+    vertical-align: middle;
+    height: 100%; }
+
+.inner-box .right {
+    float: right;
+    width: 58%;
+    height: 100%;
+    position: relative;
+    background-image: url("../img/login-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.inner-box .right:before {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    content: ' ';
+    vertical-align: middle;
+    height: 100%; }
+
+.inner-box .right .text {
+    position: relative;
+    padding: 0 30px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    color: #fff; }
+
+.inner-box .right .heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 26px;
+    font-weight: 300; }
+
+.inner-box .right p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300; }
+
+.inner-box .right .overlay {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(157, 133, 38, 0.9); }
+
+.inner-box .header {
+    margin-bottom: 30px; }
+
+.inner-box .lead {
+    margin-top: 5px;
+    font-size: 18px;
+    text-align: center; }
+
+.inner-box .form-inner-small .btn {
+    margin-top: 20px; }
+
+.inner-box .form-inner-small .element-left {
+    float: left; }
+
+.inner-box .form-inner-small .element-right {
+    float: right; }
+
+.inner-box .form-inner-small .bottom {
+    margin-top: 20px;
+    text-align: center; }
+
+.inner-box.lockscreen {
+    width: 50%;
+    padding: 40px 60px; }
+
+.inner-box.lockscreen .logo {
+    margin-bottom: 30px; }
+
+.inner-box.lockscreen .user {
+    margin-bottom: 30px; }
+
+.inner-box.lockscreen .user .name {
+    font-size: 18px;
+    margin-top: 10px; }
+
+@media screen and (min-width: 1440px) {
+    .inner-box.lockscreen {
+        width: 35%; } }
+
+@media screen and (max-width: 1279px) {
+    .inner-box {
+        width: 90%; }
+
+    .inner-box .left {
+        top: 3.3em; } }
+
+@media screen and (max-width: 1023px) {
+    .inner-box .left {
+        width: 100%;
+        position: inherit;
+        padding: 30px; }
+
+    .inner-box .right {
+        display: none; } }
+
+@media screen and (max-width: 992px) {
+    .inner-box {
+        width: 70%; }
+
+    .inner-box.lockscreen {
+        width: 50%;
+        padding: 40px 20px; } }
+
+@media screen and (max-width: 640px) {
+    .inner-box {
+        width: 90%; }
+
+    .inner-box .content {
+        width: 95%; }
+
+    .inner-box.lockscreen {
+        width: 90%; } }
+
+.form-error {
+    color: #BF2604;
+}
+
