@@ -9,11 +9,11 @@ Integer manipulation calculator
 4. Move application and system folders above the web root.
 
 -/home/site_name
-    -public_html
-        -index.html
-        -.htaccess
-    -system
-    -application
+ -public_html
+  -index.html
+  -.htaccess
+  -system
+ -application
 
 5. Within index.php you'll need to update $system_path and $application_folder to reflect the location and name of your system and application folders. 
 You can use an absolute path or a relative path. Relative path shown below:
