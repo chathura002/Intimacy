@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 28, 2018, 10:01:07 AM
+    Author     : Chris
+*/
+
+body {
+font-family: helvetica, sans-serif;
+}
+
+header {
+height: 70px;
+clear: both;
+text-align: center;
+}
+
+header img {
+max-height: 30px;
+margin-top: 20px;
+}
+
+main {
+margin-left: -10px;
+}
+
+main div.set {
+display: block;
+width: 11%;
+float: left;
+vertical-align: top;
+margin-bottom: 10px;
+box-sizing: border-box;
+padding-left: 10px;
+text-align: center;
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+	main div.set {
+	width: 20%;
+	}
+	main div.set:nth-child(6) {
+	clear: both;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+	main div.set {
+	width: 33%;
+	}
+	main div.set:nth-child(4) {
+	clear: both;
+	}
+}
+
+main div.set div.pad {
+border: 1px solid #eee;
+padding-bottom: 10px;
+}
+
+main div.set a {
+display: block;
+padding: 5px 10px;
+}
+
+main div.set img {
+max-width: 100%;
+}
+
+h2 {
+color: #09bdd8;
+font-weight: bold;
+font-size: 20px;
+}
