@@ -13,7 +13,7 @@
     <body>
         <header><a href="http://www.blackpepper.co.nz/"><img src="http://www.blackpepper.co.nz/images/logo1.png"></a></header>
         <?php
-        //Rearange array data
+        //Rearrange array data
         $i = 0;
         foreach ($client_data as $single_client) {
             $rearranged_arr[$single_client->bp_name]['url'] = $single_client->bp_url;
@@ -23,7 +23,7 @@
         }
         //Sort array into alphabetical order
         ksort($rearranged_arr);
-        //Categorize sorted array according first letter of client name
+        //Categorize sorted array according to the first letter of the client name
         foreach ($rearranged_arr as $client_name => $other_data) {
             $result[substr($client_name, 0, 1)][] = $other_data;
         }
